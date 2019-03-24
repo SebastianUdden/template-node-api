@@ -5,6 +5,7 @@ import Message from './message';
 
 const connectDb = () => {
     return mongoose.connect(process.env.DATABASE_URL);
+    // { useNewUrlParser: true }
 };
 
 const models = { User, Message };
